@@ -1,25 +1,54 @@
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-family: 'Pretendard';
+    src: url(./woff2/Pretendard-Regular.woff2) format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Pretendard';
+    src: url(./woff2/Pretendard-Medium.woff2) format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(./woff2/Pretendard-SemiBold.woff2) format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(./woff2/Pretendard-Bold.woff2) format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(./woff2/Pretendard-ExtraBold.woff2) format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
 body {
-    font-family: "Pretendard-Regular", Pretendard-Regular, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-family: "Pretendard", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 nav {
     height: 70px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     position: sticky;
     top: 0px;
-    /* background-color: #94B4D5; */
+    background-color: #94B4D5;
 }
 
 .logo, .beta_service {
-    width: 132px;
+    width: 100px;
     margin: 20px;
     display: flex;
     align-items: center;
@@ -32,34 +61,38 @@ nav {
     width: 100%;
 }
 
-main {
-    font-family: "Pretendard-Regular", Pretendard-Regular
+#fullpage {
+    font-family: "Pretendard", Pretendard
 }
 
 section {
     background-color: #F9FAFB;
     margin-bottom: 100px;
+    margin: 200px 0;
 }
 
 .section1 {
     height: 850px;
     width: auto;
-    background-size: 100%;
+    background-size: cover;
     background-image: url("./img/section1_img.png");
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0px;
 }
 .section1_header {
-    font-size: 45px;
-    font-weight: 700;
+    font-size: 38px;
+    font-weight: 900;
     color: white;
     margin-top: 5px;
     text-align: center;
+    letter-spacing: 3px;
 }
 .section1_subheader {
-    margin-top: 15px;
-    font-size: 25px;
+    margin-top: 30px;
+    font-size: 21px;
+    font-weight: 600;
     color: white;
     text-align: center;
 }
@@ -69,24 +102,24 @@ section {
 }
 
 .section2_header {
-    font-size: 30px;
-    font-weight: 500;
-    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 20px;
     margin-left: 18px;
 }
 .section2_subheader_container {
     margin-top: 45px;
 }
 .section2_subheader {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     color: #17171f9a;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 18px;
 }
 
 .section_header_container {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 18px;
 }
 .section_subheader_container {
@@ -94,7 +127,7 @@ section {
     margin-left: 18px;
 }
 .section_text_container {
-    margin-top: 50px;
+    margin-top: 80px;
     margin-left: 18px;
     margin-bottom: 25px;
 }
@@ -108,21 +141,25 @@ section {
     margin-top: 50px;
     margin-left: 18px;
     font-weight: 600;
+    letter-spacing:0.5px;
 }
 .section_header {
     font-size: 30px;
     font-weight: 700;
-    margin-top: 5px;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
 }
 .section_subheader {
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 600;
     margin-top: 5px;
+    letter-spacing: 1px;
 }
 .section_text {
     font-size: 17px;
     color: #12121284;
     margin-top: 5px;
+    font-weight: 500;
 }
 
 .section_img {
@@ -143,8 +180,9 @@ section {
 }
 .section7_header {
     color: white;
-    font-size: 45px;
+    font-size: 43px;
     margin: 20px;
+    font-weight: 600;
 }
 .section7_img {
     width: 160px;
@@ -187,10 +225,10 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     height: 90px;
-    font-family: "Pretendard-Regular", Pretendard-Regular
 }
 footer > div {
     color: white;
-    font-size: 15px;
+    font-size: 12px;
     margin-top: 15px;
+    font-family: "Pretendard", Pretendard
 }

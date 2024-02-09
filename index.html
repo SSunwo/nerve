@@ -12,15 +12,15 @@
         <div class="logo"><img src="./img/nav_logo.png" alt=""></div>
         <div class="beta_service" onclick="window.open('https://tally.so/r/w8LODO')"><img src="./img/nav_btn.png" alt=""></div>
     </nav>
-    <main>
-        <section class="section1">
-            <div style="margin-top: 80px;">
+    <main id="fullpage">
+        <section class="section active section1">
+            <div>
                 <div class="section1_header">내가 바라는</div>
                 <div class="section1_header">라이프스타일</div>
             </div>
             <div class="section1_subheader">너브에서 더 간편하게</div>
         </section>
-        <section class="section2">
+        <section class="section section2">
             <div class="section2_header_container">
                 <div class="section2_header">검증된 라이프스타일</div>
                 <div class="section2_header">제품들을</div>
@@ -30,10 +30,10 @@
             <div class="section2_subheader_container">
                 <div class="section2_subheader">이제껏 경험하지 못한</div>
                 <div class="section2_subheader">라이프스타일 에디팅 스토어,</div>
-                <div class="section2_subheader">오직 너브에서</div>
+                <div class="section2_subheader">오직 <span style="color: black;">너브</span> 에서</div>
             </div>
         </section>
-        <section class="section3">
+        <section class="section section3">
             <div class="section_tag">NERVE. POINT 1</div>
             <div class="section_header_container">
                 <div class="section_header">Living Life I Choose!</div>
@@ -67,7 +67,7 @@
             </div>
             <div class="section_img"><img src="./img/section3_5.png" alt=""></div>
         </section>
-        <section class="section4">
+        <section class="section4 section">
             <div class="section_tag">NERVE. POINT 2</div>
             <div class="section_header_container">
                 <div class="section_header">에디터가 직접 검증한</div>
@@ -84,7 +84,7 @@
             </div>
             <div class="section_img"><img src="./img/section4_1.png" alt=""></div>
         </section>
-        <section class="section5">
+        <section class="section5 section">
             <div class="section_tag">NERVE. POINT 3</div>
             <div class="section_header_container">
                 <div class="section_header">너브에서만 경험할 수 있는</div>
@@ -111,7 +111,7 @@
             </div>
             <div class="section_img"><img src="./img/section5_3.png" alt=""></div>
         </section>
-        <section class="section6">
+        <section class="section6 section">
             <div class="section_tag">NERVE. POINT 4</div>
             <div class="section_header_container">
                 <div class="section_header">너브가 발굴한</div>
@@ -126,10 +126,9 @@
                 <div class="section_text">너브가 검증한,</div>
                 <div class="section_text">우리에게 새로움을 선사할 브랜드</div> 
             </div>
-
             <div class="section_img"><img src="./img/section6_1.png" alt=""></div>
         </section>
-        <section class="section7 section_last">
+        <section class="section7 section_last section">
             <div style="display: flex; justify-content: space-evenly;">
                 <div class="section7_header">베타서비스,</div>
                 <div class="section7_img"><img src="./img/section7_1.png" alt=""></div>
@@ -151,11 +150,12 @@
             <div class="footer_2">Nerve.</div>
             <div class="footer_2">© 2023</div>
         </div>
-        <div>
+        <div style="display: flex; flex-direction: column; align-items: end;">
             <div class="footer_3">145, Anam-ro, Seongbuk-gu,</div>
             <div class="footer_3">Seoul, Republic of Korea</div>
         </div>
     </footer>
-</body>
     <script src="./main.js"></script>
+</body>
+
 </html>
